@@ -1,0 +1,5 @@
+# MiDaS monocular depth (monocular/midas_*.py)
+-r requirements.txt
+torch
+torchvision  # imported by the MiDaS "transforms" entry point on torch.hub
+timm         # used by the MiDaS DPT models loaded through torch.hub

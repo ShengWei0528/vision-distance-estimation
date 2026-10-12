@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 350" width="760" height="350" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Stereo vision: depth from disparity</title>
+  <defs>
+    <marker id="arr2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect x="0.5" y="0.5" width="759" height="349" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+
+  <!-- equations -->
+  <text x="30" y="40" font-size="16" fill="#0f172a" font-weight="600">Depth from disparity</text>
+  <text x="30" y="64" font-size="15" fill="#334155">d = x<tspan baseline-shift="sub" font-size="11">L</tspan> − x<tspan baseline-shift="sub" font-size="11">R</tspan></text>
+  <text x="30" y="88" font-size="15" fill="#334155">Z = f · B / d</text>
+  <text x="30" y="118" font-size="12" fill="#475569">larger disparity  →  closer point</text>
+
+  <!-- optical axes -->
+  <line x1="300" y1="285" x2="300" y2="60" stroke="#cbd5e1" stroke-dasharray="6 5"/>
+  <line x1="460" y1="285" x2="460" y2="60" stroke="#cbd5e1" stroke-dasharray="6 5"/>
+
+  <!-- rays -->
+  <line x1="380" y1="50" x2="300" y2="280" stroke="#64748b" stroke-width="1.5"/>
+  <line x1="380" y1="50" x2="460" y2="280" stroke="#64748b" stroke-width="1.5"/>
+
+  <!-- scene point -->
+  <circle cx="380" cy="50" r="7" fill="#2563eb"/>
+  <text x="396" y="55" font-size="14" fill="#2563eb" font-weight="600">P  (scene point)</text>
+
+  <!-- image planes -->
+  <line x1="240" y1="240" x2="360" y2="240" stroke="#94a3b8" stroke-width="3"/>
+  <line x1="400" y1="240" x2="520" y2="240" stroke="#94a3b8" stroke-width="3"/>
+  <!-- projections -->
+  <circle cx="313.9" cy="240" r="5" fill="#ea580c"/>
+  <circle cx="446.1" cy="240" r="5" fill="#ea580c"/>
+  <text x="322" y="230" font-size="14" fill="#ea580c" font-weight="600">x<tspan baseline-shift="sub" font-size="10">L</tspan></text>
+  <text x="420" y="230" font-size="14" fill="#ea580c" font-weight="600">x<tspan baseline-shift="sub" font-size="10">R</tspan></text>
+
+  <!-- cameras -->
+  <rect x="285" y="275" width="30" height="18" rx="3" fill="#0f172a"/>
+  <rect x="445" y="275" width="30" height="18" rx="3" fill="#0f172a"/>
+  <circle cx="300" cy="280" r="4" fill="#ffffff"/>
+  <circle cx="460" cy="280" r="4" fill="#ffffff"/>
+  <text x="275" y="302" font-size="13" fill="#475569" text-anchor="end">left camera</text>
+  <text x="485" y="302" font-size="13" fill="#475569">right camera</text>
+
+  <!-- baseline -->
+  <line x1="300" y1="318" x2="460" y2="318" stroke="#334155" marker-start="url(#arr2)" marker-end="url(#arr2)"/>
+  <text x="380" y="338" font-size="13" fill="#0f172a" text-anchor="middle">B  baseline</text>
+
+  <!-- focal length -->
+  <line x1="545" y1="240" x2="545" y2="280" stroke="#334155" marker-start="url(#arr2)" marker-end="url(#arr2)"/>
+  <line x1="522" y1="240" x2="551" y2="240" stroke="#cbd5e1" stroke-dasharray="3 4"/>
+  <line x1="478" y1="280" x2="551" y2="280" stroke="#cbd5e1" stroke-dasharray="3 4"/>
+  <text x="555" y="265" font-size="13" fill="#0f172a">f&#160;&#160;focal length (px)</text>
+
+  <!-- depth -->
+  <line x1="720" y1="50" x2="720" y2="280" stroke="#334155" marker-start="url(#arr2)" marker-end="url(#arr2)"/>
+  <line x1="520" y1="50" x2="726" y2="50" stroke="#cbd5e1" stroke-dasharray="3 4"/>
+  <line x1="690" y1="280" x2="726" y2="280" stroke="#cbd5e1" stroke-dasharray="3 4"/>
+  <text x="712" y="170" font-size="13" fill="#0f172a" text-anchor="end">Z&#160;&#160;depth</text>
+</svg>

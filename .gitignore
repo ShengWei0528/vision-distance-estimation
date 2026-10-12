@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Input / output media (not tracked; pass your own files on the command line)
+*.mp4
+*.avi
+*.mov
+*.mkv
+data/
+outputs/
+
+# Model weights and caches
+*.pt
+*.pth
+*.onnx
+
+# Editors and OS files
+.vscode/
+.idea/
+*.code-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*

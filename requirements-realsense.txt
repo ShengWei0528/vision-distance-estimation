@@ -1,0 +1,5 @@
+# Intel RealSense depth camera (depth_camera/realsense_center_distance.py)
+# If pip finds no pyrealsense2 wheel for your platform, build librealsense
+# with its Python bindings from source: https://github.com/IntelRealSense/librealsense
+-r requirements.txt
+pyrealsense2

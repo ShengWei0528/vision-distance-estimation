@@ -1,0 +1,4 @@
+# Core: similar-triangles and stereo scripts
+# (a GUI build of OpenCV is needed for cv2.imshow; opencv-python includes it)
+opencv-python
+numpy
